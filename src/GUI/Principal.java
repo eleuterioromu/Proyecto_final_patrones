@@ -100,19 +100,16 @@ static String jugador2;
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(68, 68, 68)
-                                .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 111, Short.MAX_VALUE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addContainerGap())
-                    .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(68, 68, 68)
+                        .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 111, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel8)
@@ -121,6 +118,10 @@ static String jugador2;
                 .addGap(110, 110, 110)
                 .addComponent(jLabel3)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(91, 91, 91)
+                .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -140,9 +141,9 @@ static String jugador2;
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
                     .addComponent(jLabel6))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel7)
-                .addContainerGap())
+                .addContainerGap(10, Short.MAX_VALUE))
         );
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Marcador", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, null, new java.awt.Color(153, 153, 0)));
@@ -168,7 +169,7 @@ static String jugador2;
                 {null, null, null, null,null}
             },
             new String [] {
-                "marcador",getJugador1(), getJugador2(), "Tiros " + getJugador1(),"tiros2 "+ getJugador2()
+                "marcador",uno(), dos(), "Tiros " + uno(),"tiros "+ dos()
             }
         ));
         jTable1.getTableHeader().setReorderingAllowed(false);
@@ -180,7 +181,7 @@ static String jugador2;
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 433, Short.MAX_VALUE)
+                .addComponent(jScrollPane1)
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -212,12 +213,13 @@ static String jugador2;
                         .addComponent(jButton3)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(96, 96, 96)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(24, 24, 24))
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(146, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addContainerGap())))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -239,28 +241,29 @@ static String jugador2;
     }// </editor-fold>//GEN-END:initComponents
     
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
-      ///tennis.setIdioma(crearIdioma((String) jComboBox1.getSelectedItem()));
-        //jLabel7.setText((String)jComboBox1.getSelectedItem());
         String nombreIdioma =(String) jComboBox1.getSelectedItem();
          if (nombreIdioma == "Ingles"){
             tennis.setIdioma(new Ingles());
             System.out.println("Seleciono el idioma Ingles");
             jLabel7.setText(tennis.score());
-            //aqui va el idioma que se inicializa y se pasa el valor tal como lo pasarias en tu main 
+    
          }
          else if (nombreIdioma == "Espanol"){
             tennis.setIdioma(new Espanol());
             System.out.println("Seleciono el idioma Español");
             jLabel7.setText(tennis.score());
-            //aqui va el idioma que se inicializa y se pasa el valor tal como lo pasarias en tu main
+
          }
          else if (nombreIdioma == "Frances"){
-             
-            //aqui va el idioma que se inicializa y se pasa el valor tal como lo pasarias en tu main
+            tennis.setIdioma(new Frances());
+            System.out.println("Seleciono el idioma Frances");
+            jLabel7.setText(tennis.score());  
          }
          else if (nombreIdioma == "Aleman"){
-             
-            //aqui va el idioma que se inicializa y se pasa el valor tal como lo pasarias en tu main
+            tennis.setIdioma(new Aleman());
+            System.out.println("Seleciono el idioma Aleman");
+            jLabel7.setText(tennis.score()); 
+
          }
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
@@ -283,12 +286,10 @@ static String jugador2;
         tennis.getJugador1().setAlias(jugador1);
         jLabel4.setText(jugador1);
         jButton1.setText(jugador1);
-        jTable1.updateUI();
-        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        String jugador2 = JOptionPane.showInputDialog("Nombre de jugador 2");
+        jugador2 = JOptionPane.showInputDialog("Nombre de jugador 2");
         tennis.getJugador1().setAlias(jugador2);
         jLabel6.setText(jugador2);
         jButton2.setText(jugador2);
@@ -324,16 +325,6 @@ static String jugador2;
       System.out.println("El usuario ha elegido "+seleccion);
     }//GEN-LAST:event_jButton3ActionPerformed
 
-    public void asignaruno(){
-    tennis.getJugador1().setAlias(jugador1);
-    jButton1.setText(jugador1);
-    }
-                   
-    public void asignardos(){
-    tennis.getJugador1().setAlias(jugador2);
-    jButton1.setText(jugador2);
-    }
-    
     private String getJugador1(){
         return (tennis.getJugador1().getAlias() == null)? tennis.getJugador1().getJugadorX(): tennis.getJugador1().getAlias();
     }
@@ -341,11 +332,18 @@ static String jugador2;
     private String getJugador2(){
         return (tennis.getJugador2().getAlias() == null)? tennis.getJugador2().getJugadorX(): tennis.getJugador2().getAlias();
     }
+    
+    private String uno(){
+        return jButton1.getText();
+    }
+    
+    private String dos(){
+        return jButton2.getText();
+    }
+    
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                jugador1 = JOptionPane.showInputDialog("nombre del primer Jugador");
-                jugador2 = JOptionPane.showInputDialog("nombre del rival");
                 new Principal().setVisible(true);
                 
                  }

@@ -1,9 +1,5 @@
 package Estadios;
-
-
 import JuegoTennis.*;
-import static JuegoTennis.Tennis.puntosJugador1;
-import static JuegoTennis.Tennis.puntosJugador2;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import java.awt.Color;
@@ -81,10 +77,7 @@ public class EstadioOaxaca extends JPanel implements Runnable, KeyListener, Esta
                     }else{
                         System.out.println(refATenis.score());
                         System.out.println(refATenis.getTirosJugador1());
-                        //System.out.println(refATenis.getPuntosJugador(puntosJugador2));
-                        //System.out.println(refATenis.getPuntosJugador(puntosJugador1));
-                        //System.out.println(refATenis.getJugador1().getAlias());
-                        //System.out.println(refATenis.getJugador1().getJugadorX());
+
                     }
     }
     
@@ -96,10 +89,6 @@ public class EstadioOaxaca extends JPanel implements Runnable, KeyListener, Esta
                     }else{
                         System.out.println(refATenis.score());
                         System.out.println(refATenis.getTirosJugador2());
-                        //System.out.println(refATenis.getPuntosJugador(puntosJugador2));
-                        //System.out.println(refATenis.getPuntosJugador(puntosJugador1));
-                        //System.out.println(refATenis.getJugador2().getAlias());
-                        //System.out.println(refATenis.getJugador2().getJugadorY());
                         
                     }
     }

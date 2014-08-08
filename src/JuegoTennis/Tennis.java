@@ -175,26 +175,4 @@ public class Tennis{
     public Tennis getTennis(){
         return this.tennis = new Tennis();
     }
-    public static void main(String r[]){
-        Tennis player = new Tennis();
-        player.setIdioma(new Espanol());
-        jugador1.setAlias("matt");
-        jugador2.setAlias("zack");
-        player.setPuntos(jugador1);
-        player.setPuntos(jugador1);
-        player.setPuntos(jugador1);
-        player.setPuntos(jugador1);
-        //player.setPuntos(jugador1);
-        //player.setPuntos(jugador2);
-        //player.setPuntos(jugador2);
-        //player.setPuntos(jugador2);
-        player.setPuntos(jugador2);
-        player.setPuntos(jugador2);
-        System.out.println(player.score());
-        System.out.println(player.getPuntosJugador(puntosJugador1));
-        System.out.println(player.getPuntosJugador(puntosJugador2));
-        System.out.println(player.getTirosJugador1());
-        System.out.println(Tennis.puntosJugador2.size());
-        
-    }
 }
